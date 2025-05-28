@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://co510odymtapl"]
+[gd_scene load_steps=9 format=3 uid="uid://co510odymtapl"]
 
 [ext_resource type="Texture2D" uid="uid://chck1jx7digbl" path="res://assets/sprites/knight.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://63m4w1lpstp" path="res://player.gd" id="1_onrkg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
@@ -42,13 +43,14 @@ animations = [{
 radius = 5.09902
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_2hs0m")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.168195
+frame_progress = 0.81499
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
