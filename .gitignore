@@ -8,3 +8,7 @@ export_presets.cfg
 .mono/
 
 .godot/
+
+.DS_Store
+
+*.import
