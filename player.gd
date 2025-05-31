@@ -27,11 +27,11 @@ func _physics_process(delta: float) -> void:
 
 	if is_on_floor():
 		if direction == 0:
-			animated_sprite_2d.animation = "idle"
+			animated_sprite_2d.play("idle")
 		else:
-			animated_sprite_2d.animation = "idle"
+			animated_sprite_2d.play("run")
 	else:
-		animated_sprite_2d.animation = "jump"
+		animated_sprite_2d.play("jump")
 
 	if direction:
 		velocity.x = direction * SPEED
